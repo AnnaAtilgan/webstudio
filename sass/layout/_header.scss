@@ -1,0 +1,106 @@
+.header .container {
+    padding-left: 215px;
+    padding-right: 215px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.header__nav__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.site__nav .link.current {
+    color: var(--acsent-colour);
+}
+
+.header__nav__item {
+    gap: 50px;
+}
+
+.header__nav__link {
+    position: relative;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    transition: color var(--o-transition-duration) var(--o-transition-timing-function);
+}
+
+.header__nav__link:hover,
+.header__nav__link:focus {
+    color: var(--acsent-colour);
+}
+
+.header__nav__link.current::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: var(--acsent-colour);
+    bottom: -1px;
+    transition: transform var(--o-transition-duration) var(--o-transition-timing-function);
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__tel {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--description-text-color);
+    transition: color var(--o-transition-duration) var(--o-transition-timing-function);
+}
+
+.header__mail {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--description-text-color);
+    transition: color var(--o-transition-duration) var(--o-transition-timing-function);
+}
+
+.header__tel:hover,
+.header__tel:focus {
+    color: var(--acsent-colour);
+}
+
+.header__mail:hover,
+.header__mail:focus {
+    color: var(--acsent-colour);
+}
+
+.header__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.header__border {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+}
